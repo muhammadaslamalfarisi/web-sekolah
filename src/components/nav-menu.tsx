@@ -67,12 +67,12 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="">
-          <NavigationMenuTrigger>Kegiatan</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Program</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-50 gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">PPDB</Link>
+                  <Link href="#">SPMB</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Komunitas Belajar</Link>
@@ -82,6 +82,12 @@ export function NavMenu() {
                 </NavigationMenuLink>{" "}
                 <NavigationMenuLink asChild>
                   <Link href="#">Ekstrakurikuler</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">BOSP</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">PIP</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
