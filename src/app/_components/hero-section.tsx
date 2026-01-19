@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function HeroSection() {
   return (
     <div className="py-32">
       <div className="flex flex-col items-center justify-center gap-5 text-center">
