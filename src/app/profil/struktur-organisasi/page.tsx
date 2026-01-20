@@ -2,118 +2,137 @@ import React from "react";
 import Image from "next/image";
 
 const StrukturOrganisasi = () => {
-  // Data sesuai dengan gambar yang diunggah
+  // 1. Data sesuai dengan file di folder public/images
   const kepalaSekolah = {
     nama: "RADEN IRAWANGSA, S.Pd",
     jabatan: "KEPALA SEKOLAH",
-    foto: "/images/kepala-sekolah.jpg", // Ganti dengan path foto asli Anda
+    foto: "/images/kepala-sekolah.jpeg", // Pastikan file ini ada di public/images/
   };
 
   const stafGuru = [
     {
       nama: "BAIQ YULI ISDAENI, S.Pd",
       jabatan: "Guru Kelas I",
-      foto: "/images/guru1.jpg",
+      foto: "/images/guru1.jpeg",
     },
     {
       nama: "NURUL HIDAYAH, S.Pd",
       jabatan: "Guru Kelas II",
-      foto: "/images/guru2.jpg",
+      foto: "/images/guru2.jpeg",
     },
     {
       nama: "ARI HINDARTI M, S.Pd",
       jabatan: "Guru Kelas III",
-      foto: "/images/guru3.jpg",
+      foto: "/images/guru3.jpeg",
     },
     {
       nama: "SABARIAH, S.Pd",
       jabatan: "Guru Kelas IV.A",
-      foto: "/images/guru4.jpg",
+      foto: "/images/guru4.jpeg",
     },
     {
       nama: "RATNINGSIH, S.Pd",
       jabatan: "Guru Kelas IV.B",
-      foto: "/images/guru5.jpg",
+      foto: "/images/guru5.jpeg",
     },
     {
       nama: "AGUS FEBRIAWAN, S.Pd",
       jabatan: "Guru Kelas V.A",
-      foto: "/images/guru6.jpg",
+      foto: "/images/guru6.jpeg",
     },
     {
       nama: "RAMDAN, S.Pd",
       jabatan: "Guru Kelas V.B",
-      foto: "/images/guru7.jpg",
+      foto: "/images/guru7.jpeg",
     },
     {
       nama: "ISNAN SATRIAWAN, S.Pd",
       jabatan: "Guru Kelas VI",
-      foto: "/images/guru8.jpg",
+      foto: "/images/guru8.jpeg",
     },
     {
       nama: "FAIZUL WATHONI, S.Pd",
       jabatan: "Guru Agama Islam",
-      foto: "/images/guru9.jpg",
+      foto: "/images/guru9.jpeg",
     },
     {
       nama: "FITRIATUL KHAERANI, S.Pd",
       jabatan: "Guru Bahasa Inggris",
-      foto: "/images/guru10.jpg",
+      foto: "/images/guru10.jpeg",
     },
     {
       nama: "MUHAMMAD ASLAM ALFARISI",
       jabatan: "Operator Sekolah",
-      foto: "/images/guru11.jpg",
+      foto: "/images/guru11.jpeg",
     },
     {
       nama: "MERTANEP",
       jabatan: "Penjaga Sekolah",
-      foto: "/images/guru12.jpg",
+      foto: "/images/guru12.jpeg",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Bagian Atas: Kepala Sekolah dengan Background Awan */}
+    <div className="min-h-screen bg-white text-black">
+      {/* --- BAGIAN ATAS: KEPALA SEKOLAH --- */}
       <div
-        className="relative py-16 px-4 flex flex-col items-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/cloud-bg.jpg')" }} // Gunakan gambar awan sebagai background
+        className="relative py-16 px-4 flex flex-col items-center bg-gray-100"
+        style={{
+          backgroundImage: "url('/images/cloud-bg.jpg')",
+          backgroundSize: "cover",
+        }}
       >
         <div className="flex flex-col items-center">
           <div className="w-48 h-64 relative border-4 border-white shadow-xl mb-4 overflow-hidden bg-blue-600">
-            {/* Placeholder Image jika file belum ada */}
-            <div className="flex items-center justify-center h-full text-white text-xs text-center p-2">
-              Foto Kepala Sekolah
-            </div>
-            {/* Gunakan komponen Image Next.js jika foto sudah siap:
-            <Image src={kepalaSekolah.foto} alt={kepalaSekolah.nama} fill className="object-cover" /> 
-            */}
+            {/* Foto Kepala Sekolah Aktif */}
+            <Image
+              src={kepalaSekolah.foto}
+              alt={kepalaSekolah.nama}
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
-          <div className="text-center bg-white/80 backdrop-blur-sm p-2 rounded shadow-sm">
-            <h3 className="font-bold text-lg uppercase leading-tight">
+          <div className="text-center bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-md">
+            <h3 className="font-bold text-xl uppercase leading-tight text-blue-900">
               {kepalaSekolah.jabatan}
             </h3>
-            <p className="text-md font-medium">{kepalaSekolah.nama}</p>
+            <p className="text-lg font-semibold">{kepalaSekolah.nama}</p>
           </div>
         </div>
       </div>
 
-      <hr className="border-t-2 border-gray-200 my-8 w-11/12 mx-auto" />
+      <hr className="border-t-2 border-gray-200 my-10 w-11/12 mx-auto" />
 
-      {/* Bagian Bawah: Barisan Guru/Staf */}
+      {/* --- BAGIAN BAWAH: STAF GURU --- */}
       <div className="container mx-auto pb-20 px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        <h2 className="text-center text-2xl font-bold mb-10 uppercase italic underline">
+          PENDIDIK DAN TENAGA KEPENDIDIKAN
+        </h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
           {stafGuru.map((guru, index) => (
-            <div key={index} className="flex flex-col items-center w-full">
-              <div className="w-full aspect-[3/4] max-w-[200px] relative border-4 border-white shadow-lg overflow-hidden bg-red-600 mb-3">
-                <div className="flex items-center justify-center h-full text-white text-xs">
-                  Foto {index + 1}
-                </div>
-                {/* <Image src={guru.foto} alt={guru.nama} fill className="object-cover" /> */}
+            <div
+              key={index}
+              className="flex flex-col items-center w-full group"
+            >
+              {/* Container Foto */}
+              <div className="w-full aspect-[3/4] max-w-[180px] relative border-4 border-white shadow-lg overflow-hidden transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src={guru.foto}
+                  alt={guru.nama}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                />
               </div>
-              <div className="text-center">
-                <h4 className="font-bold text-sm uppercase">{guru.jabatan}</h4>
-                <p className="text-xs">{guru.nama}</p>
+
+              {/* Keterangan Nama & Jabatan */}
+              <div className="text-center mt-4">
+                <h4 className="font-bold text-sm uppercase text-blue-800">
+                  {guru.jabatan}
+                </h4>
+                <p className="text-xs font-medium text-gray-700">{guru.nama}</p>
               </div>
             </div>
           ))}
