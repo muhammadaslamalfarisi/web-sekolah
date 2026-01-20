@@ -41,19 +41,25 @@ export function NavMenu() {
               <ul className="grid w-50 gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Profil Sekolah</Link>
+                    <Link href="/profil/profil-sekolah">Profil Sekolah</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Struktur Organisasi</Link>
+                    <Link href="/profil/struktur-organisasi">
+                      Struktur Organisasi
+                    </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Sarana dan Prasarana</Link>
+                    <Link href="/profil/sarana-dan-prasarana">
+                      Sarana dan Prasarana
+                    </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Data Peserta Didik</Link>
+                    <Link href="/profil/data-peserta-didik">
+                      Data Peserta Didik
+                    </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">PTK</Link>
+                    <Link href="/profil/ptk">PTK</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
