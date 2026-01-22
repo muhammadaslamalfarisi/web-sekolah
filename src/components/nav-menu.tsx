@@ -23,7 +23,9 @@ export function NavMenu() {
   return (
     <NavigationMenu className={isMobile ? "max-w-full justify-start" : ""}>
       <NavigationMenuList
-        className={isMobile ? "flex-col items-start space-y-2" : "flex-row"}
+        className={
+          isMobile ? "flex-col items-start space-y-4 w-full" : "flex-row gap-2"
+        }
       >
         <NavigationMenuList
           className={
@@ -71,13 +73,13 @@ export function NavMenu() {
               <ul className="grid w-50 gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Pengumuman</Link>
+                    <Link href="/berita/pengumuman">Pengumuman</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Undangan</Link>
+                    <Link href="/berita/undangan">Undangan</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="#">Inovasi</Link>
+                    <Link href="/berita/inovasi">Inovasi</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
@@ -89,7 +91,12 @@ export function NavMenu() {
               <ul className="grid w-50 gap-4">
                 <li>
                   <NavigationMenuLink asChild>
-                    <Link href="#">SPMB</Link>
+                    <Link
+                      href="/program/spmb"
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      SPMB
+                    </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link href="#">Komunitas Belajar</Link>

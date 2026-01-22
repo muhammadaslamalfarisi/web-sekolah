@@ -9,10 +9,13 @@ import { NavMenu } from "./nav-menu";
 import LogoSekolah from "../../public/logo-sekolah.png";
 import Image from "next/image";
 
+import { Menu } from "lucide-react"; // Import ikon hamburger
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-50">
       <div className="flex items-center justify-between h-20">
         <div className="flex items-center space-x-3">
           <Image src={LogoSekolah} alt="Logo" className="h-10 w-auto" />
@@ -21,7 +24,7 @@ export default function Navbar() {
           </span>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:block z-50">
           <NavMenu />
         </div>
 
