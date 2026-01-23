@@ -119,7 +119,7 @@ export function NavMenu() {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/">Unduhan</Link>
+              <Link href="/unduhan">Unduhan</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
