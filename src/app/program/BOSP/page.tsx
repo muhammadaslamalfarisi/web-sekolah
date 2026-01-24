@@ -203,6 +203,34 @@ const BOSP = () => {
             ARKAS Kemdikbudristek.
           </p>
         </div>
+
+        {/* Link Cek Status */}
+        <div className="bg-white p-6 rounded-2xl border-2 border-dashed border-gray-200 text-center">
+          <p className="text-gray-600 mb-4">
+            Ingin cek status pencairan Anda secara mandiri?
+          </p>
+          <a
+            href="https://bosp.kemendikdasmen.go.id/portal/welcome"
+            target="_blank"
+            className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-black text-white rounded-full font-medium transition-all"
+          >
+            Cek di SIPINTAR (Link Resmi)
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   );
