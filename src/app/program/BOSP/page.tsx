@@ -212,9 +212,9 @@ const BOSP = () => {
           <a
             href="https://bosp.kemendikdasmen.go.id/portal/welcome"
             target="_blank"
-            className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-black text-white rounded-full font-medium transition-all"
+            className="flex items-center justify-center w-full md:max-w-md mx-auto px-6 py-3 bg-gray-800 hover:bg-black text-white rounded-xl transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg"
           >
-            Cek di SIPINTAR (Link Resmi)
+            <span className="font-medium">Cek di BOSP (Link Resmi)</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 ml-2"
