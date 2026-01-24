@@ -205,7 +205,7 @@ const BOSP = () => {
         </div>
 
         {/* Link Cek Status */}
-        <div className="bg-white p-6 rounded-2xl border-2 border-dashed border-gray-200 text-center">
+        <div className="bg-white p-6 rounded-2xl border-2 border-dashed border-gray-200 text-center flex flex-col items-center">
           <p className="text-gray-600 mb-4">
             Ingin cek status pencairan Anda secara mandiri?
           </p>
