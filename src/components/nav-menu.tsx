@@ -33,6 +33,9 @@ export function NavMenu() {
                   <Link href="#">Profil Sekolah</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
+                  <Link href="#">Visi & Misi</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
                   <Link href="#">Struktur Organisasi</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -42,7 +45,7 @@ export function NavMenu() {
                   <Link href="#">Data Peserta Didik</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#">PTK</Link>
+                  <Link href="#">Data PTK</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -67,12 +70,12 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="">
-          <NavigationMenuTrigger>Kegiatan</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Program</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-50 gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">PPDB</Link>
+                  <Link href="#">SPMB</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Komunitas Belajar</Link>
@@ -83,23 +86,29 @@ export function NavMenu() {
                 <NavigationMenuLink asChild>
                   <Link href="#">Ekstrakurikuler</Link>
                 </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">BOSP</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link href="#">PIP</Link>
+                </NavigationMenuLink>
               </li>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/">Unduhan</Link>
+            <Link href="/">Download</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/">JDIH</Link>
+            <Link href="/">Galeri</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/">Kontak</Link>
+            <Link href="/">Contact</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
