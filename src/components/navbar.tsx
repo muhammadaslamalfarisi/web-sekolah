@@ -1,41 +1,17 @@
-"use client";
-
-import { useState } from "react";
-import { IconMenu2, IconX } from "@tabler/icons-react";
-
 import { IconInnerShadowTop } from "@tabler/icons-react";
 import { NavMenu } from "./nav-menu";
 
-import LogoSekolah from "../../public/logo-sekolah.png";
-import Image from "next/image";
-
-import { Menu } from "lucide-react"; // Import ikon hamburger
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-50">
-      <div className="flex items-center justify-between h-20">
-        <div className="flex items-center space-x-3">
-          <Image src={LogoSekolah} alt="Logo" className="h-10 w-auto" />
-          <span className="text-lg font-bold hidden sm:block">
-            SD Negeri 1 Batu Rakit
-          </span>
+      <div className="flex items-center justify-between h-32">
+        <div className="size-20">
+          <img
+            src="https://lh3.googleusercontent.com/sitesv/AAzXCkcAMCyAY-P2U8L_8Ze4bjwTtLY-lp2Om95DjOwUbe92xMt2xszXTlx6WgyverSeUlkZ9d5spU7V9Hhcx3gZhugt9YLsNGm5y0NlJVYeLXK26hcg5oo2p2ryLemHHrB6deNooauBnOxGsjaHXTiBLHj6U-7g6jGJMmJjgEVAD4mCuvRbifn79WOukeU=w16383"
+            alt=""
+          />
         </div>
-
-        <div className="hidden md:block z-50">
-          <NavMenu />
-        </div>
-
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-gray-600 focus:outline-none"
-          >
-            {isOpen ? <IconX size={28} /> : <IconMenu2 size={28} />}
-          </button>
-        </div>
+        <NavMenu />
       </div>
     </div>
   );
