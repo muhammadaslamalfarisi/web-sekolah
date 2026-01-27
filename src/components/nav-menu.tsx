@@ -75,7 +75,7 @@ export function NavMenu() {
             <ul className="grid w-50 gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">SPMB</Link>
+                  <Link href="#">PPDB</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Komunitas Belajar</Link>
@@ -103,12 +103,12 @@ export function NavMenu() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/">Galeri</Link>
+            <Link href="/">JDIH</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/">Contact</Link>
+            <Link href="/">Kontak</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
