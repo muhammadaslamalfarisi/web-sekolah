@@ -36,9 +36,7 @@ export function NavMenu() {
                   <Link href="#">Visi & Misi</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="/profil/struktur-organisasi">
-                    Struktur Organisasi
-                  </Link>
+                  <Link href="#">Struktur Organisasi</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">Sarana dan Prasarana</Link>
