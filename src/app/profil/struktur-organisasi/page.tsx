@@ -6,59 +6,59 @@ const StrukturOrganisasi = () => {
   const kepalaSekolah = {
     nama: "RADEN IRAWANGSA, S.Pd",
     jabatan: "KEPALA SEKOLAH",
-    foto: "/images/kepala-sekolah.png", // Pastikan file ini ada di public/images/
+    foto: "/images/kepala-sekolah.jpg", // Pastikan file ini ada di public/images/
   };
 
   const stafGuru = [
     {
       nama: "BAIQ YULI ISDAENI, S.Pd",
       jabatan: "Guru Kelas I",
-      foto: "/images/guru1.png",
+      foto: "/images/guru1.jpg",
     },
     {
       nama: "NURUL HIDAYAH, S.Pd",
       jabatan: "Guru Kelas II",
-      foto: "/images/guru2.png",
+      foto: "/images/guru2.jpg",
     },
     {
       nama: "ARI HINDARTI M, S.Pd",
       jabatan: "Guru Kelas III",
-      foto: "/images/guru3.png",
+      foto: "/images/guru3.jpg",
     },
     {
       nama: "SABARIAH, S.Pd",
       jabatan: "Guru Kelas IV.A",
-      foto: "/images/guru4.png",
+      foto: "/images/guru4.jpg",
     },
     {
       nama: "RATNINGSIH, S.Pd",
       jabatan: "Guru Kelas IV.B",
-      foto: "/images/guru5.png",
+      foto: "/images/guru5.jpg",
     },
     {
       nama: "AGUS FEBRIAWAN, S.Pd",
       jabatan: "Guru Kelas V.A",
-      foto: "/images/guru6.png",
+      foto: "/images/guru6.jpg",
     },
     {
       nama: "RAMDAN, S.Pd",
       jabatan: "Guru Kelas V.B",
-      foto: "/images/guru7.png",
+      foto: "/images/guru7.jpg",
     },
     {
       nama: "ISNAN SATRIAWAN, S.Pd",
       jabatan: "Guru Kelas VI",
-      foto: "/images/guru8.png",
+      foto: "/images/guru8.jpg",
     },
     {
       nama: "FAIZUL WATHONI, S.Pd",
       jabatan: "Guru Agama Islam",
-      foto: "/images/guru9.png",
+      foto: "/images/guru9.jpg",
     },
     {
       nama: "FITRIATUL KHAERANI, S.Pd",
       jabatan: "Guru Bahasa Inggris",
-      foto: "/images/guru10.png",
+      foto: "/images/guru10.jpg",
     },
   ];
 
@@ -66,12 +66,12 @@ const StrukturOrganisasi = () => {
     {
       nama: "MUHAMMAD ASLAM ALFARISI",
       jabatan: "Operator Sekolah",
-      foto: "/images/guru11.png",
+      foto: "/images/guru11.jpg",
     },
     {
       nama: "MERTANEP",
       jabatan: "Penjaga Sekolah",
-      foto: "/images/guru12.png",
+      foto: "/images/guru12.jpg",
     },
   ];
 
